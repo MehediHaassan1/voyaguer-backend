@@ -30,7 +30,8 @@ const dbMiddleware = async (req, res, next) => {
             users: db.collection('users'),
             posts: db.collection('posts'),
             comments: db.collection('comments'),
-        }                                                                                           
+            blogs: db.collection('blogs')
+        }
         // req.collection = db.collection('users')
         next();
     } catch (error) {
